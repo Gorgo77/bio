@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgo's page</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="ico.avif">
+</head>
+<body>
+<div>
+    
+    <h1 class="midle">
+        HELLO! // WEllCOME
+      <p class="kicsi"><a href="main2.html">click to enter</a></p> 
+    </h1>
+
+</div>  
+
+<script>
+    var title = document.title;
+    var anim = ["ϟ", "☈", "彡", "シ", "↻", "❖", "♕", "女"];
+    var x = 0;
+    function animateTitle() {
+      x++;
+      document.title = anim[x % anim.length] + " " + title;
+    }
+    setInterval(animateTitle, 100);
+  </script>
+</body>
+</html>

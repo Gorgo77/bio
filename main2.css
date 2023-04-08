@@ -1,0 +1,145 @@
+body{
+    background-color: black;
+}
+
+
+
+
+#myVideo {
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+
+.content {
+    border: inset rgba(255, 255, 255, 0.7);
+    position: fixed;
+    bottom: 0px;
+    background: rgba(4, 23, 25, 0.845);
+    width: 99%;
+    min-height: auto;
+    min-width: auto;
+}
+  
+
+th{
+    font-size: 1.9cm;
+    color: #ffffff;
+    text-shadow: 1px 5px 29px rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    min-height: auto;
+    min-width: auto;
+}
+
+
+td{
+    font-style: italic;
+    color: #ffffffae;
+    height: 50px;
+    font-size: 0.7cm;
+    text-align: center;
+    min-height: auto;
+    min-width: auto;
+}
+
+table{
+    width: 100%;
+    padding: 1cm;
+    border-color: #ffffff;
+    margin: auto;
+    word-spacing: 0.2cm;
+    min-height: auto;
+    min-width: auto;
+    
+}
+
+
+
+.content2 {
+    position: fixed;
+    top: 0px;
+    background: rgba(0, 0, 0, 0);
+    width: 99%;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0.848);
+    font-weight: bold;
+    color: rgba(240, 248, 255, 0.697);
+    border: solid white 1px;
+
+}
+
+button:hover{
+    color: rgb(2, 94, 88);
+}
+
+
+
+
+.h1{
+    width: 100%;
+    background-color: rgba(4, 23, 25, 0.848);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10cm;
+    min-width: auto;
+    min-width: auto;
+}
+
+h1{
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 5px 29px rgb(0, 0, 0);
+}
+
+
+h1::before, h1::after{
+    content: '';
+    padding: 90px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    transform: translateX(-17%) translateY(-50%) rotate(0);
+    animation: spin 6s alternate infinite ease-in-out;
+    
+}
+
+h1::before{
+    border-top: 15px solid;
+    border-left: 15px solid;
+    color: rgb(0, 17, 18);
+}
+
+h1::after{
+    border-bottom: 15px solid;
+    border-right: 15px solid; 
+    z-index: -1;
+    color: rgb(0, 0, 0);
+}
+
+@keyframes spin{
+    100%{
+        transform: translateX(-20%) translateY(-50%) rotate(360deg);
+    }
+}
+
+.musick{
+    display: block;
+    float: left;
+}

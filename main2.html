@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:D:D:D:D:D:D:D:D:D</title>
+    <link rel="icon" type="image/x-icon" href="ico.avif">
+    <link rel="stylesheet" href="main2.css">
+
+</head>
+<body>
+
+
+    <video autoplay muted loop id="myVideo">
+    <source src="background.mp4" type="video/mp4">
+</video>
+
+
+
+
+<div class="h1">
+    <h1>
+        Welcome to Gorgo's bio page!
+    </h1>
+</div>
+    
+
+<div class="content2">
+    <audio id="pop" autoplay loop>
+        <source src="pop.mp3" type="audio/mpeg">
+    </audio>
+    
+    <button onclick="playAudio()" type="button">PLAY MUSCIK</button>
+    <button onclick="pauseAudio()" type="button">PAUSE MUSICK</button> 
+    
+    <script>
+    var x = document.getElementById("pop"); 
+    
+    function playAudio() { 
+      x.play(); 
+    } 
+    
+    function pauseAudio() { 
+      x.pause(); 
+    } 
+    </script>
+    
+    <script>
+        function play_pause() {
+            var myAudio = document.getElementById("myAudio");
+            if (myAudio.paused) {
+                myAudio.play();
+            } else {
+                myAudio.pause();
+            }
+        }
+    </script>
+</div>
+
+
+
+
+
+<div class="content">
+    <table>
+        <tr>
+            <th>
+                DC:
+            </th>
+            <th>
+                TWITTER:
+            </th>
+            <th>
+                STEAM:
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                NOT Gorgo#3358
+            </td>     
+            <td>
+                @ezhackerman
+            </td>
+            <td>
+                https://steamcommunity.com/id/Gorgi_/
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<script>
+    var title = "Gorgo's bio page";
+    function animateTitle() {
+      document.title = "" + title;
+    }
+    setInterval(animateTitle, 5000);
+  </script>
+</body>
+</html>
